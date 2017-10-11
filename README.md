@@ -87,6 +87,8 @@ The session store for q. is currently configured to use a Redis Server, and the 
 ##### Setup
 1. Create and setup an 64-bit Ubuntu-based linux server on Linode or DigitalOcean.
 
+1. Using the IP address and password for your cloud server, log in by running the ssh command with username@ipaddress as the argument. For example ssh root@'your cloud server ip address'
+
 1. Install Docker using the repository.
 
 Refer to [Docker installation instructions](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository) for more information. **At Step 4 of the instructions, use `amd64` for the stable apt repository.** `amd64` refers to 64-bit operating systems, if you're interested to know :)
@@ -114,8 +116,8 @@ It would be helpful to also install redis-cli, to be able to access the redis se
 To install redis-cli, you can install npm, then install redis-cli:
 
 ```
-sudo apt-get npm
-sudo apt-get redis-cli
+sudo apt-get install npm
+sudo apt-get install redis-cli
 ```
 
 Here are some useful redis commnds:
